@@ -5,6 +5,7 @@ on:
     branches:
       - master
 
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -13,17 +14,11 @@ jobs:
       - name: Use Node.js
         uses: actions/setup-node@v3
         with:
-<<<<<<< HEAD
-          node-version: '20'
-      - name: Install Dependencies
-        run: npm install
-      - name: Run Start
-        run: npm run start
-=======
           node-version: "20"
 
       - name: Install Dependencies
         run: npm install
+
 
       - name: Run Start
         run: npm run start
@@ -31,6 +26,8 @@ jobs:
       # - name: Run Lint
       #   run: npm run lint
 
->>>>>>> l
+      # - name: Run Lint
+      #   run: npm run lint
+
       # - name: Run Prettier
       #   run: npm run format
