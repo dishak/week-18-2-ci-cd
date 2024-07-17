@@ -5,7 +5,6 @@ on:
     branches:
       - master
 
-      
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -15,14 +14,9 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: '20'
-      
       - name: Install Dependencies
         run: npm install
-        
       - name: Run Start
         run: npm run start
-      
-      - name: Run Prettier 
-        run: npm run format   
-
-
+      - name: Run Prettier
+        run: npm run format
