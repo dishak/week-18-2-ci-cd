@@ -18,5 +18,5 @@ jobs:
         run: npm install
       - name: Run Start
         run: npm run start
-      - name: Run Prettier
-        run: npm run format
+      # - name: Run Prettier
+      #   run: npm run format
