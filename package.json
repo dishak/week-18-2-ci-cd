@@ -9,7 +9,6 @@
     "db:generate": "cd packages/db && npx prisma generate && cd ../..",
     "start-user-app": "cd ./apps/user-app && npm run start",
     "start": "npm run db:generate && npm run build "
-
   },
   "devDependencies": {
     "@repo/eslint-config": "*",
