@@ -38,10 +38,10 @@ jobs:
         push: true
         tags: disha968/firstapp:latest
 
-    # - name: Build and push user-app image
-    #   uses: docker/build-push-action@v3
-    #   with:
-    #     context: .
-    #     file: ./apps/user-app/Dockerfile.user
-    #     push: true
-    #     tags: disha968/firstapp/user-app:latest
+    - name: Build and push user-app image
+      uses: docker/build-push-action@v3
+      with:
+        context: .
+        file: ./apps/user-app/Dockerfile.user
+        push: true
+        tags: disha968/secondapp:latest
