@@ -36,7 +36,7 @@ jobs:
         context: ./apps/merchant-app
         file: ./apps/merchant-app/Dockerfile
         push: true
-        tags: ${{ secrets.DOCKERHUB_USERNAME }}/merchant-app:latest
+        tags: disha968/firstapp/merchant-app:latest
 
     - name: Build and push user-app image
       uses: docker/build-push-action@v3
@@ -44,4 +44,4 @@ jobs:
         context: ./apps/user-app
         file: ./apps/user-app/Dockerfile
         push: true
-        tags: ${{ secrets.DOCKERHUB_USERNAME }}/user-app:latest
+        tags: disha968/firstapp/user-app:latest
