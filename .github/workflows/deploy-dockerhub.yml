@@ -34,7 +34,7 @@ jobs:
       uses: docker/build-push-action@v3
       with:
         context: ./apps/merchant-app
-        file: ./apps/merchant-app/Dockerfile
+        file: ./apps/merchant-app/Dockerfile.merchant
         push: true
         tags: disha968/firstapp/merchant-app:latest
 
@@ -42,6 +42,6 @@ jobs:
       uses: docker/build-push-action@v3
       with:
         context: ./apps/user-app
-        file: ./apps/user-app/Dockerfile
+        file: ./apps/user-app/Dockerfile.user
         push: true
         tags: disha968/firstapp/user-app:latest
