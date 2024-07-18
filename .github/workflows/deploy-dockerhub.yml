@@ -33,7 +33,7 @@ jobs:
     - name: Build and push merchant-app image
       uses: docker/build-push-action@v3
       with:
-        context: ./apps/merchant-app
+        context: .
         file: ./apps/merchant-app/Dockerfile.merchant
         push: true
         tags: disha968/firstapp/merchant-app:latest
@@ -41,7 +41,7 @@ jobs:
     - name: Build and push user-app image
       uses: docker/build-push-action@v3
       with:
-        context: ./apps/user-app
+        context: .
         file: ./apps/user-app/Dockerfile.user
         push: true
         tags: disha968/firstapp/user-app:latest
